@@ -16,13 +16,15 @@ class Projects extends Component {
             opacity: {opacity: 0},
             selection: 0,
             loop: 0,
+            class: ['','','codeKeeper','','sftg'],
             yt: {
                 height: '250',
-                width: '400',
+                // width: '250',
                 playerVars: {
                   autoplay: 1,
                   loop: 1,
                   controls: 0,
+                  showinfo: 0,
                 //   end: 5,
                   playlist: "",
                   modestbranding: 1
@@ -83,9 +85,6 @@ class Projects extends Component {
                 <Col size="12">
                     <Row input="projectDisplay">
                         <Col size="12 sm-5">
-                        {console.log(`yt: ${this.state.yt.playerVars.playlist}`)}
-                        {console.log(`data; ${Videos[this.state.data]}`)}
-                        {console.log("--------------------")}
                             { this.state.yt.playerVars.playlist === Videos[this.state.data]
                                 ?<YouTube
                                 videoId={Videos[this.state.data]}     
@@ -94,8 +93,7 @@ class Projects extends Component {
                             />
                                 :null
                             }
-                            
-                            <img src={Images[this.state.data]} width="100px" onClick={this.projectSelect} name={0} alt=""/> 
+                            <img src={Images[this.state.data]} width="100px" name={0} alt=""/> 
                             <div className="curve" >
                                 <div className="links"> 
                                     {this.state.projects.map((project, i)=>(
@@ -110,7 +108,7 @@ class Projects extends Component {
                         <Col size="12 sm-7">               
                             <Row>
                                 <div className="col-12" style={this.state.opacity}>
-                                    <h3>{this.state.projects[this.state.data].title}</h3>
+                                    <h3 className={this.state.class[this.state.data]}>{this.state.projects[this.state.data].title}</h3>
                                     <h5>{this.state.projects[this.state.data].lang}</h5>
                                     <hr />
                                     <p>{this.state.projects[this.state.data].disc}</p>
