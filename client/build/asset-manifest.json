@@ -1,12 +1,16 @@
 {
-  "main.css": "static/css/main.39906d1e.css",
-  "main.css.map": "static/css/main.39906d1e.css.map",
-  "main.js": "static/js/main.d24cdda1.js",
-  "main.js.map": "static/js/main.d24cdda1.js.map",
-  "static/media/PunchOut.png": "static/media/PunchOut.710951f0.png",
+  "main.css": "static/css/main.9b62d152.css",
+  "main.css.map": "static/css/main.9b62d152.css.map",
+  "main.js": "static/js/main.aa43b9fe.js",
+  "main.js.map": "static/js/main.aa43b9fe.js.map",
   "static/media/bg-space.jpg": "static/media/bg-space.5c59817c.jpg",
-  "static/media/codeKeeper.png": "static/media/codeKeeper.d1ad939f.png",
+  "static/media/ck.png": "static/media/ck.1922d69a.png",
+  "static/media/ck.ttf": "static/media/ck.7bb181a8.ttf",
   "static/media/logo.png": "static/media/logo.2880ce3b.png",
+  "static/media/po.png": "static/media/po.00bb0803.png",
   "static/media/profilePic.png": "static/media/profilePic.4947b430.png",
-  "static/media/ssc.png": "static/media/ssc.a373054f.png"
+  "static/media/sftg.png": "static/media/sftg.7f0786e9.png",
+  "static/media/sftg.ttf": "static/media/sftg.dfa3e42a.ttf",
+  "static/media/ssc.png": "static/media/ssc.6bb597dc.png",
+  "static/media/tn.png": "static/media/tn.a0c70bc5.png"
 }
