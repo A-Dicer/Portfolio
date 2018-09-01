@@ -21,7 +21,7 @@ class Projects extends Component {
                 height: '250',
                 // width: '250',
                 playerVars: {
-                  autoplay: 1,
+                  autoplay: 0,
                   loop: 1,
                   controls: 0,
                   showinfo: 0,
@@ -60,8 +60,7 @@ class Projects extends Component {
     fade = (name) => {
         let yt = Object.assign({}, this.state.yt)
         yt.playerVars.playlist = Videos[name]
-        
-
+    
         this.setState({opacity: {opacity: 0}, selection: parseInt(name, 10)})
        
         setTimeout(function(){
@@ -98,8 +97,8 @@ class Projects extends Component {
                                 <div className="links"> 
                                     {this.state.projects.map((project, i)=>(
                                         i === this.state.selection
-                                        ? <option className="far fa-dot-circle"  key={i} value={i}></option>
-                                        : <option className="far fa-circle" onClick={this.projectSelect} key={i} value={i}></option>
+                                        ? <button className="far fa-dot-circle"  key={i} value={i}></button>
+                                        : <button className="far fa-circle" onClick={this.projectSelect} key={i} value={i}></button>
                                     ))}
                                 </div>   
                             </div>

@@ -21,14 +21,14 @@
     justify-content: center
 }
 .projectDisplay > .col-sm-5:hover > span {filter: blur(0)}
-.projectDisplay > .col-sm-5 > span {transition: opacity 300ms; z-index: 0; filter: blur(5px)}
-.projectDisplay > .col-sm-5:hover > img {opacity: 0}
+.projectDisplay > .col-sm-5 > span {transition: opacity 300ms; z-index: 1; filter: blur(5px)}
+.projectDisplay > .col-sm-5:hover > img {opacity: 0; z-index: 0;}
 .projectDisplay > .col-sm-5 > img {  
     position: absolute;
     top: 10px;
     transition: opacity 1000ms;
     z-index: 1;
-    width: 350px;
+    width: 350px
 }
 .projectDisplay > .col-sm-5 > .curve > .links {
     position: absolute;
@@ -48,7 +48,7 @@
     z-index: 1;
     display: flex;
     align-items: center;
-    justify-content: center
+    justify-content: center;
 }
 
 .far {padding: 0; color: rgb(126, 126, 126); font-size: 18px}
@@ -71,3 +71,6 @@
 
 .sftg {font-family: sftg; font-size: 50px}
 .codeKeeper {font-family: ck}
+
+.links > button {border: none; background: #fff; outline: none}
+.links > button.launch {border: none}
