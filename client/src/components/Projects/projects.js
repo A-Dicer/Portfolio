@@ -43,7 +43,7 @@ class Projects extends Component {
 //Get all projects
     getProjects = () => {
         API.getProjects()
-            .then(res => {this.setState({projects: res.data.results, opacity: {opacity: 1}, data:1})}
+            .then(res => {this.setState({projects: res.data.results, opacity: {opacity: 1}})}
         ).catch(err => console.log(err));
     };
 
@@ -112,7 +112,11 @@ class Projects extends Component {
                                     <hr />
                                     <p>{this.state.projects[this.state.data].disc}</p>
                                     <a href={this.state.projects[this.state.data].links[0]} target="new"> <Icon id="fab fa-github" /> Github Repository </a> <br />
-                                    <a href={this.state.projects[this.state.data].links[1]} target="new"> <Icon id="fab fa-chrome" /> {this.state.projects[this.state.data].links[1]}</a>       
+                                    { 
+                                    this.state.projects[this.state.data].links[1]
+                                    ? <a href={this.state.projects[this.state.data].links[1]} target="new"> <Icon id="fab fa-chrome" /> {this.state.projects[this.state.data].links[1]}</a>       
+                                    : null 
+                                    }
                                 </div>
                             </Row>     
                         </Col>
