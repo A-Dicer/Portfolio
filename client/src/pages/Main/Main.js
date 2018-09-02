@@ -28,7 +28,7 @@ class Main extends Component {
                         </Col>
                         <Col size="12"> 
                             <h3>Andrew Dicer</h3> 
-                        <p> {this.state.contactInfo.email} | {this.state.contactInfo.phone} </p>            
+                        <p> {this.state.contactInfo.email} | <a href={require("./Andrew.Dicer.Resume.pdf")} download> <Icon id="fas fa-file" /> Resume </a> </p>            
                         </Col>
                     </Row>
                 </header>
