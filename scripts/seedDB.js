@@ -8,8 +8,14 @@ mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/portfolio", {us
 
 const projectsSeed = [
   { 
+    "title": "Kalimba RILs",
+    "disc": "A companion streaming race leaderboard for the video game Kalimba.  It tracks your position in the race and allows you to chat with the other players. ",
+    "lang": "React.js, Node.js, Socket-io, Moment.js, MongoDB",
+    "links": ["https://github.com/A-Dicer/KalimbaILs", "https://kalimbril.herokuapp.com"]
+  },
+  { 
     "title": "Punch-Out!! Splitter",
-    "disc": "A speedrun Timer for every Punch-Out!! game.  The user to track their overall time, individual level times, and saves their best to the Database. It provides an overlay to be streamed live.  Requires a Twitch.com account to login.",
+    "disc": "A speedrun Timer for every Punch-Out!! game.  Allows user to track their overall time, individual level times, and saves their best to the Database. It provides an overlay to be streamed live.  Requires a Twitch.com account to login.",
     "lang": "React.js, Node.js, Socket-io, MongoDB",
     "links": ["https://github.com/A-Dicer/PunchOut", "https://punch-out.herokuapp.com"]
   },

@@ -16,7 +16,7 @@ class Projects extends Component {
             opacity: {opacity: 0},
             selection: 0,
             loop: 0,
-            class: ['','','codeKeeper','','sftg'],
+            class: ['','','','codeKeeper','','sftg'],
             yt: {
                 height: '250',
                 // width: '250',
