@@ -40,7 +40,7 @@ class Main extends Component {
                         <Col size="12 sm-6">
                             <Row input="about">
                                 <Col size="12">
-                                    <img src={require("./profilePic.png")} alt=""/>
+                                    <img src={require("./profilePic.jpg")} alt=""/>
                                     <p>
                                         I recently relocated from Florida to Chicago and am seeking 
                                         a new career opportunity. I worked 

@@ -72,7 +72,9 @@ main > .row > .col-12 {padding: 15px}
 /* About ------------------------------------------------ */
 .about > .col-12 {font-size: 14px}
 .about > .col-12 > img { 
+    border-radius: 10px;
     border: solid #ccc 1px;
+    width: 200px;
     float: left;
     margin-right: 15px;
     padding-left: -85px  
